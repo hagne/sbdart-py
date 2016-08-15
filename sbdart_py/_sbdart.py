@@ -1,3 +1,7 @@
+from _parameters import param_descriptions, param_descriptions_abb, param_descriptions_name
+from _parameters_class_abb import Parameters_abb
+from _parameters_class_name import Parameters_name
+
 class SbDart(object):
     def __init__(self):
         self.__std_input = None
@@ -21,7 +25,7 @@ class SbDart(object):
             para_name = parm['abb']
             para_name_intern = '__%s' % para_name
             #     break
-            para_value = getattr(std_input, para_name)
+            para_value = getattr(self.std_input, para_name)
             setattr(Parameters_name, para_name_visible, ParamProperty(para_name_intern))
             setattr(parameters, para_name_visible, para_value)
             par = getattr(parameters, para_name_visible)
