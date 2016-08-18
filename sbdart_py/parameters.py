@@ -2,7 +2,7 @@ def get_param_descriptions():
     param_descriptions = [
     {'abb': 'ABAER',
      'name': 'aerosol_wavelength_exponent',
-     'category': 'not_selected',
+     'category': 'aerosols',
      'description': """Wavelength (Angstrom model) exponent used to extrapolate
           BLA extinction efficiency to wavelengths outside the
           range of WLBAER [Qext ~ (lambda)^(-abaer)].  This parameter
@@ -22,7 +22,7 @@ def get_param_descriptions():
     {'abb': 'IDB', 'name': 'define_it_13', 'category': 'not_selected', 'description': 'get it from documentation'},
     {'abb': 'IMOMA', 'name': 'define_it_14', 'category': 'not_selected', 'description': 'get it from documentation'},
     {'abb': 'IMOMC', 'name': 'define_it_15', 'category': 'not_selected', 'description': 'get it from documentation'},
-    {'abb': 'IOUT', 'name': 'define_it_16', 'category': 'not_selected', 'description': 'get it from documentation'},
+    {'abb': 'IOUT', 'name': 'output_format', 'category': 'output_format', 'description': 'get it from documentation'},
     {'abb': 'ISALB', 'name': 'define_it_17', 'category': 'not_selected', 'description': 'get it from documentation'},
     {'abb': 'ISAT', 'name': 'define_it_18', 'category': 'not_selected', 'description': 'get it from documentation'},
     {'abb': 'JAER', 'name': 'define_it_19', 'category': 'not_selected', 'description': 'get it from documentation'},
@@ -94,6 +94,7 @@ def get_param_descriptions():
 _pdt = get_param_descriptions()
 param_descriptions_abb = [i['abb'] for i in _pdt]
 param_descriptions_name = [i['name'] for i in _pdt]
+parameter_categories = ['aerosols', 'output_format', 'conditions']
 
 class Parameter(object):
     def __init__(self, abb, what, para_dict_list):
@@ -105,14 +106,72 @@ class Parameter(object):
     def reset2default(self):
         self._dict['value'] = self._dict['value_default']
 
-    def set_value(self, value):
+    def _set_value(self, value):
         self._dict['value'] = value
 
     def __repr__(self):
         return str(self._dict['value'])
 
+    ###############
 
-def generate_parameter_class(what, stdout=True, save_folder='/Users/htelg/prog/sbdart-py/sbdart_py/'):
+    def __add__(self, other):
+        return self.self._dict['value'] + other
+
+    def __sub__(self, other):
+        return self.self._dict['value'] - other
+
+    def __mul__(self, other):
+        return self.self._dict['value'] * other
+
+    def __truediv__(self, other):
+        return self.self._dict['value'] / other
+
+    ###############
+
+    def __lt__(self, other):
+        return self._dict['value'] < other
+
+    def __le__(self, other):
+        return self._dict['value'] <= other
+
+    def __eq__(self, other):
+        return self._dict['value'] == other
+
+    def __ne__(self, other):
+        return self._dict['value'] != other
+
+    def __gt__(self, other):
+        return self._dict['value'] > other
+
+    def __ge__(self, other):
+        return self._dict['value'] >= other
+
+
+    @property
+    def default_value(self):
+        return self._dict['value_default']
+
+    @property
+    def description(self):
+        return self._dict['description']
+
+
+def generate_parameter_class(what,stdout=True, save_folder='/Users/htelg/prog/sbdart-py/sbdart_py/'):
+    """
+
+    Parameters
+    ----------
+    what: string
+        abb, name, aerosols, output, ...
+    stdout: bool
+        if print out results
+    save_folder: string
+
+    Returns
+    -------
+
+    """
+
     txt = ['from sbdart_py.parameters import Parameter',
            '',
            'class Parameters_%s(object):' % what,
@@ -129,15 +188,27 @@ def generate_parameter_class(what, stdout=True, save_folder='/Users/htelg/prog/s
         fname = save_folder + '_parameter_class_' + what + '.py'
         raus = open(fname, 'w')
         raus.write(joined)
-    for par in param_descriptions:
-        value = par[what]
+
+    for par in get_param_descriptions():
+        if what in parameter_categories:
+            if par['category'] != what:
+                continue
+            else:
+                value = par['name']
+                whatwhat = 'name'
+        else:
+            whatwhat = what
+
+        value = par[whatwhat]
+
+
         txt = ['    @property',
                '    def %s(self):' % value,
-               '        return Parameter("%s", "%s", self.para_dict_list)' % (value, what),
+               '        return Parameter("%s", "%s", self.para_dict_list)' % (value, whatwhat),
                '',
                '    @%s.setter' % value,
                '    def %s(self,value):' % value,
-               '        Parameter("%s", "%s", self.para_dict_list).set_value(value)' % (value, what),
+               '        Parameter("%s", "%s", self.para_dict_list)._set_value(value)' % (value, whatwhat),
                '',
                '']
         joined = '\n'.join(txt)

@@ -10,7 +10,7 @@ class Parameters_abb(object):
 
     @ABAER.setter
     def ABAER(self,value):
-        Parameter("ABAER", "abb", self.para_dict_list).set_value(value)
+        Parameter("ABAER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def ALAT(self):
@@ -18,7 +18,7 @@ class Parameters_abb(object):
 
     @ALAT.setter
     def ALAT(self,value):
-        Parameter("ALAT", "abb", self.para_dict_list).set_value(value)
+        Parameter("ALAT", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def ALBCON(self):
@@ -26,7 +26,7 @@ class Parameters_abb(object):
 
     @ALBCON.setter
     def ALBCON(self,value):
-        Parameter("ALBCON", "abb", self.para_dict_list).set_value(value)
+        Parameter("ALBCON", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def ALON(self):
@@ -34,7 +34,7 @@ class Parameters_abb(object):
 
     @ALON.setter
     def ALON(self,value):
-        Parameter("ALON", "abb", self.para_dict_list).set_value(value)
+        Parameter("ALON", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def AMIX(self):
@@ -42,7 +42,7 @@ class Parameters_abb(object):
 
     @AMIX.setter
     def AMIX(self,value):
-        Parameter("AMIX", "abb", self.para_dict_list).set_value(value)
+        Parameter("AMIX", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def BTEMP(self):
@@ -50,7 +50,7 @@ class Parameters_abb(object):
 
     @BTEMP.setter
     def BTEMP(self,value):
-        Parameter("BTEMP", "abb", self.para_dict_list).set_value(value)
+        Parameter("BTEMP", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def CORINT(self):
@@ -58,7 +58,7 @@ class Parameters_abb(object):
 
     @CORINT.setter
     def CORINT(self,value):
-        Parameter("CORINT", "abb", self.para_dict_list).set_value(value)
+        Parameter("CORINT", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def CSZA(self):
@@ -66,7 +66,7 @@ class Parameters_abb(object):
 
     @CSZA.setter
     def CSZA(self,value):
-        Parameter("CSZA", "abb", self.para_dict_list).set_value(value)
+        Parameter("CSZA", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def DBAER(self):
@@ -74,7 +74,7 @@ class Parameters_abb(object):
 
     @DBAER.setter
     def DBAER(self,value):
-        Parameter("DBAER", "abb", self.para_dict_list).set_value(value)
+        Parameter("DBAER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def GBAER(self):
@@ -82,7 +82,7 @@ class Parameters_abb(object):
 
     @GBAER.setter
     def GBAER(self,value):
-        Parameter("GBAER", "abb", self.para_dict_list).set_value(value)
+        Parameter("GBAER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def IAER(self):
@@ -90,7 +90,7 @@ class Parameters_abb(object):
 
     @IAER.setter
     def IAER(self,value):
-        Parameter("IAER", "abb", self.para_dict_list).set_value(value)
+        Parameter("IAER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def IDATM(self):
@@ -98,7 +98,7 @@ class Parameters_abb(object):
 
     @IDATM.setter
     def IDATM(self,value):
-        Parameter("IDATM", "abb", self.para_dict_list).set_value(value)
+        Parameter("IDATM", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def IDAY(self):
@@ -106,7 +106,7 @@ class Parameters_abb(object):
 
     @IDAY.setter
     def IDAY(self,value):
-        Parameter("IDAY", "abb", self.para_dict_list).set_value(value)
+        Parameter("IDAY", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def IDB(self):
@@ -114,7 +114,7 @@ class Parameters_abb(object):
 
     @IDB.setter
     def IDB(self,value):
-        Parameter("IDB", "abb", self.para_dict_list).set_value(value)
+        Parameter("IDB", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def IMOMA(self):
@@ -122,7 +122,7 @@ class Parameters_abb(object):
 
     @IMOMA.setter
     def IMOMA(self,value):
-        Parameter("IMOMA", "abb", self.para_dict_list).set_value(value)
+        Parameter("IMOMA", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def IMOMC(self):
@@ -130,7 +130,7 @@ class Parameters_abb(object):
 
     @IMOMC.setter
     def IMOMC(self,value):
-        Parameter("IMOMC", "abb", self.para_dict_list).set_value(value)
+        Parameter("IMOMC", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def IOUT(self):
@@ -138,7 +138,7 @@ class Parameters_abb(object):
 
     @IOUT.setter
     def IOUT(self,value):
-        Parameter("IOUT", "abb", self.para_dict_list).set_value(value)
+        Parameter("IOUT", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def ISALB(self):
@@ -146,7 +146,7 @@ class Parameters_abb(object):
 
     @ISALB.setter
     def ISALB(self,value):
-        Parameter("ISALB", "abb", self.para_dict_list).set_value(value)
+        Parameter("ISALB", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def ISAT(self):
@@ -154,7 +154,7 @@ class Parameters_abb(object):
 
     @ISAT.setter
     def ISAT(self,value):
-        Parameter("ISAT", "abb", self.para_dict_list).set_value(value)
+        Parameter("ISAT", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def JAER(self):
@@ -162,7 +162,7 @@ class Parameters_abb(object):
 
     @JAER.setter
     def JAER(self,value):
-        Parameter("JAER", "abb", self.para_dict_list).set_value(value)
+        Parameter("JAER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def KDIST(self):
@@ -170,7 +170,7 @@ class Parameters_abb(object):
 
     @KDIST.setter
     def KDIST(self,value):
-        Parameter("KDIST", "abb", self.para_dict_list).set_value(value)
+        Parameter("KDIST", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def KRHCLR(self):
@@ -178,7 +178,7 @@ class Parameters_abb(object):
 
     @KRHCLR.setter
     def KRHCLR(self,value):
-        Parameter("KRHCLR", "abb", self.para_dict_list).set_value(value)
+        Parameter("KRHCLR", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def LWP(self):
@@ -186,7 +186,7 @@ class Parameters_abb(object):
 
     @LWP.setter
     def LWP(self,value):
-        Parameter("LWP", "abb", self.para_dict_list).set_value(value)
+        Parameter("LWP", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def NF(self):
@@ -194,7 +194,7 @@ class Parameters_abb(object):
 
     @NF.setter
     def NF(self,value):
-        Parameter("NF", "abb", self.para_dict_list).set_value(value)
+        Parameter("NF", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def NGRID(self):
@@ -202,7 +202,7 @@ class Parameters_abb(object):
 
     @NGRID.setter
     def NGRID(self,value):
-        Parameter("NGRID", "abb", self.para_dict_list).set_value(value)
+        Parameter("NGRID", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def NOSCT(self):
@@ -210,7 +210,7 @@ class Parameters_abb(object):
 
     @NOSCT.setter
     def NOSCT(self,value):
-        Parameter("NOSCT", "abb", self.para_dict_list).set_value(value)
+        Parameter("NOSCT", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def NOTHRM(self):
@@ -218,7 +218,7 @@ class Parameters_abb(object):
 
     @NOTHRM.setter
     def NOTHRM(self,value):
-        Parameter("NOTHRM", "abb", self.para_dict_list).set_value(value)
+        Parameter("NOTHRM", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def NPHI(self):
@@ -226,7 +226,7 @@ class Parameters_abb(object):
 
     @NPHI.setter
     def NPHI(self,value):
-        Parameter("NPHI", "abb", self.para_dict_list).set_value(value)
+        Parameter("NPHI", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def NRE(self):
@@ -234,7 +234,7 @@ class Parameters_abb(object):
 
     @NRE.setter
     def NRE(self,value):
-        Parameter("NRE", "abb", self.para_dict_list).set_value(value)
+        Parameter("NRE", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def NSTR(self):
@@ -242,7 +242,7 @@ class Parameters_abb(object):
 
     @NSTR.setter
     def NSTR(self,value):
-        Parameter("NSTR", "abb", self.para_dict_list).set_value(value)
+        Parameter("NSTR", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def NZEN(self):
@@ -250,7 +250,7 @@ class Parameters_abb(object):
 
     @NZEN.setter
     def NZEN(self,value):
-        Parameter("NZEN", "abb", self.para_dict_list).set_value(value)
+        Parameter("NZEN", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def O3TRP(self):
@@ -258,7 +258,7 @@ class Parameters_abb(object):
 
     @O3TRP.setter
     def O3TRP(self,value):
-        Parameter("O3TRP", "abb", self.para_dict_list).set_value(value)
+        Parameter("O3TRP", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def PBAR(self):
@@ -266,7 +266,7 @@ class Parameters_abb(object):
 
     @PBAR.setter
     def PBAR(self,value):
-        Parameter("PBAR", "abb", self.para_dict_list).set_value(value)
+        Parameter("PBAR", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def PHI(self):
@@ -274,7 +274,7 @@ class Parameters_abb(object):
 
     @PHI.setter
     def PHI(self,value):
-        Parameter("PHI", "abb", self.para_dict_list).set_value(value)
+        Parameter("PHI", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def PMAER(self):
@@ -282,7 +282,7 @@ class Parameters_abb(object):
 
     @PMAER.setter
     def PMAER(self,value):
-        Parameter("PMAER", "abb", self.para_dict_list).set_value(value)
+        Parameter("PMAER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def PRNT(self):
@@ -290,7 +290,7 @@ class Parameters_abb(object):
 
     @PRNT.setter
     def PRNT(self,value):
-        Parameter("PRNT", "abb", self.para_dict_list).set_value(value)
+        Parameter("PRNT", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def QBAER(self):
@@ -298,7 +298,7 @@ class Parameters_abb(object):
 
     @QBAER.setter
     def QBAER(self,value):
-        Parameter("QBAER", "abb", self.para_dict_list).set_value(value)
+        Parameter("QBAER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def RHAER(self):
@@ -306,7 +306,7 @@ class Parameters_abb(object):
 
     @RHAER.setter
     def RHAER(self,value):
-        Parameter("RHAER", "abb", self.para_dict_list).set_value(value)
+        Parameter("RHAER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def RHCLD(self):
@@ -314,7 +314,7 @@ class Parameters_abb(object):
 
     @RHCLD.setter
     def RHCLD(self,value):
-        Parameter("RHCLD", "abb", self.para_dict_list).set_value(value)
+        Parameter("RHCLD", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def SAZA(self):
@@ -322,7 +322,7 @@ class Parameters_abb(object):
 
     @SAZA.setter
     def SAZA(self,value):
-        Parameter("SAZA", "abb", self.para_dict_list).set_value(value)
+        Parameter("SAZA", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def SC(self):
@@ -330,7 +330,7 @@ class Parameters_abb(object):
 
     @SC.setter
     def SC(self,value):
-        Parameter("SC", "abb", self.para_dict_list).set_value(value)
+        Parameter("SC", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def SCLH2O(self):
@@ -338,7 +338,7 @@ class Parameters_abb(object):
 
     @SCLH2O.setter
     def SCLH2O(self,value):
-        Parameter("SCLH2O", "abb", self.para_dict_list).set_value(value)
+        Parameter("SCLH2O", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def SOLFAC(self):
@@ -346,7 +346,7 @@ class Parameters_abb(object):
 
     @SOLFAC.setter
     def SOLFAC(self,value):
-        Parameter("SOLFAC", "abb", self.para_dict_list).set_value(value)
+        Parameter("SOLFAC", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def SPOWDER(self):
@@ -354,7 +354,7 @@ class Parameters_abb(object):
 
     @SPOWDER.setter
     def SPOWDER(self,value):
-        Parameter("SPOWDER", "abb", self.para_dict_list).set_value(value)
+        Parameter("SPOWDER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def SZA(self):
@@ -362,7 +362,7 @@ class Parameters_abb(object):
 
     @SZA.setter
     def SZA(self,value):
-        Parameter("SZA", "abb", self.para_dict_list).set_value(value)
+        Parameter("SZA", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def TAERST(self):
@@ -370,7 +370,7 @@ class Parameters_abb(object):
 
     @TAERST.setter
     def TAERST(self,value):
-        Parameter("TAERST", "abb", self.para_dict_list).set_value(value)
+        Parameter("TAERST", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def TBAER(self):
@@ -378,7 +378,7 @@ class Parameters_abb(object):
 
     @TBAER.setter
     def TBAER(self,value):
-        Parameter("TBAER", "abb", self.para_dict_list).set_value(value)
+        Parameter("TBAER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def TCLOUD(self):
@@ -386,7 +386,7 @@ class Parameters_abb(object):
 
     @TCLOUD.setter
     def TCLOUD(self,value):
-        Parameter("TCLOUD", "abb", self.para_dict_list).set_value(value)
+        Parameter("TCLOUD", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def TEMIS(self):
@@ -394,7 +394,7 @@ class Parameters_abb(object):
 
     @TEMIS.setter
     def TEMIS(self,value):
-        Parameter("TEMIS", "abb", self.para_dict_list).set_value(value)
+        Parameter("TEMIS", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def TIME(self):
@@ -402,7 +402,7 @@ class Parameters_abb(object):
 
     @TIME.setter
     def TIME(self,value):
-        Parameter("TIME", "abb", self.para_dict_list).set_value(value)
+        Parameter("TIME", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def TTEMP(self):
@@ -410,7 +410,7 @@ class Parameters_abb(object):
 
     @TTEMP.setter
     def TTEMP(self,value):
-        Parameter("TTEMP", "abb", self.para_dict_list).set_value(value)
+        Parameter("TTEMP", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def UO3(self):
@@ -418,7 +418,7 @@ class Parameters_abb(object):
 
     @UO3.setter
     def UO3(self,value):
-        Parameter("UO3", "abb", self.para_dict_list).set_value(value)
+        Parameter("UO3", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def UW(self):
@@ -426,7 +426,7 @@ class Parameters_abb(object):
 
     @UW.setter
     def UW(self,value):
-        Parameter("UW", "abb", self.para_dict_list).set_value(value)
+        Parameter("UW", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def UZEN(self):
@@ -434,7 +434,7 @@ class Parameters_abb(object):
 
     @UZEN.setter
     def UZEN(self,value):
-        Parameter("UZEN", "abb", self.para_dict_list).set_value(value)
+        Parameter("UZEN", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def VIS(self):
@@ -442,7 +442,7 @@ class Parameters_abb(object):
 
     @VIS.setter
     def VIS(self,value):
-        Parameter("VIS", "abb", self.para_dict_list).set_value(value)
+        Parameter("VIS", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def VZEN(self):
@@ -450,7 +450,7 @@ class Parameters_abb(object):
 
     @VZEN.setter
     def VZEN(self,value):
-        Parameter("VZEN", "abb", self.para_dict_list).set_value(value)
+        Parameter("VZEN", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def WBAER(self):
@@ -458,7 +458,7 @@ class Parameters_abb(object):
 
     @WBAER.setter
     def WBAER(self,value):
-        Parameter("WBAER", "abb", self.para_dict_list).set_value(value)
+        Parameter("WBAER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def WLBAER(self):
@@ -466,7 +466,7 @@ class Parameters_abb(object):
 
     @WLBAER.setter
     def WLBAER(self,value):
-        Parameter("WLBAER", "abb", self.para_dict_list).set_value(value)
+        Parameter("WLBAER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def WLINC(self):
@@ -474,7 +474,7 @@ class Parameters_abb(object):
 
     @WLINC.setter
     def WLINC(self,value):
-        Parameter("WLINC", "abb", self.para_dict_list).set_value(value)
+        Parameter("WLINC", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def WLINF(self):
@@ -482,7 +482,7 @@ class Parameters_abb(object):
 
     @WLINF.setter
     def WLINF(self,value):
-        Parameter("WLINF", "abb", self.para_dict_list).set_value(value)
+        Parameter("WLINF", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def WLSUP(self):
@@ -490,7 +490,7 @@ class Parameters_abb(object):
 
     @WLSUP.setter
     def WLSUP(self,value):
-        Parameter("WLSUP", "abb", self.para_dict_list).set_value(value)
+        Parameter("WLSUP", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def XCH4(self):
@@ -498,7 +498,7 @@ class Parameters_abb(object):
 
     @XCH4.setter
     def XCH4(self,value):
-        Parameter("XCH4", "abb", self.para_dict_list).set_value(value)
+        Parameter("XCH4", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def XCO(self):
@@ -506,7 +506,7 @@ class Parameters_abb(object):
 
     @XCO.setter
     def XCO(self,value):
-        Parameter("XCO", "abb", self.para_dict_list).set_value(value)
+        Parameter("XCO", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def XCO2(self):
@@ -514,7 +514,7 @@ class Parameters_abb(object):
 
     @XCO2.setter
     def XCO2(self,value):
-        Parameter("XCO2", "abb", self.para_dict_list).set_value(value)
+        Parameter("XCO2", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def XHNO3(self):
@@ -522,7 +522,7 @@ class Parameters_abb(object):
 
     @XHNO3.setter
     def XHNO3(self,value):
-        Parameter("XHNO3", "abb", self.para_dict_list).set_value(value)
+        Parameter("XHNO3", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def XN2(self):
@@ -530,7 +530,7 @@ class Parameters_abb(object):
 
     @XN2.setter
     def XN2(self,value):
-        Parameter("XN2", "abb", self.para_dict_list).set_value(value)
+        Parameter("XN2", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def XN2O(self):
@@ -538,7 +538,7 @@ class Parameters_abb(object):
 
     @XN2O.setter
     def XN2O(self,value):
-        Parameter("XN2O", "abb", self.para_dict_list).set_value(value)
+        Parameter("XN2O", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def XNH3(self):
@@ -546,7 +546,7 @@ class Parameters_abb(object):
 
     @XNH3.setter
     def XNH3(self,value):
-        Parameter("XNH3", "abb", self.para_dict_list).set_value(value)
+        Parameter("XNH3", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def XNO(self):
@@ -554,7 +554,7 @@ class Parameters_abb(object):
 
     @XNO.setter
     def XNO(self,value):
-        Parameter("XNO", "abb", self.para_dict_list).set_value(value)
+        Parameter("XNO", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def XNO2(self):
@@ -562,7 +562,7 @@ class Parameters_abb(object):
 
     @XNO2.setter
     def XNO2(self,value):
-        Parameter("XNO2", "abb", self.para_dict_list).set_value(value)
+        Parameter("XNO2", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def XO2(self):
@@ -570,7 +570,7 @@ class Parameters_abb(object):
 
     @XO2.setter
     def XO2(self,value):
-        Parameter("XO2", "abb", self.para_dict_list).set_value(value)
+        Parameter("XO2", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def XO4(self):
@@ -578,7 +578,7 @@ class Parameters_abb(object):
 
     @XO4.setter
     def XO4(self,value):
-        Parameter("XO4", "abb", self.para_dict_list).set_value(value)
+        Parameter("XO4", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def XRSC(self):
@@ -586,7 +586,7 @@ class Parameters_abb(object):
 
     @XRSC.setter
     def XRSC(self,value):
-        Parameter("XRSC", "abb", self.para_dict_list).set_value(value)
+        Parameter("XRSC", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def XSO2(self):
@@ -594,7 +594,7 @@ class Parameters_abb(object):
 
     @XSO2.setter
     def XSO2(self,value):
-        Parameter("XSO2", "abb", self.para_dict_list).set_value(value)
+        Parameter("XSO2", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def ZAER(self):
@@ -602,7 +602,7 @@ class Parameters_abb(object):
 
     @ZAER.setter
     def ZAER(self,value):
-        Parameter("ZAER", "abb", self.para_dict_list).set_value(value)
+        Parameter("ZAER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def ZBAER(self):
@@ -610,7 +610,7 @@ class Parameters_abb(object):
 
     @ZBAER.setter
     def ZBAER(self,value):
-        Parameter("ZBAER", "abb", self.para_dict_list).set_value(value)
+        Parameter("ZBAER", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def ZCLOUD(self):
@@ -618,7 +618,7 @@ class Parameters_abb(object):
 
     @ZCLOUD.setter
     def ZCLOUD(self,value):
-        Parameter("ZCLOUD", "abb", self.para_dict_list).set_value(value)
+        Parameter("ZCLOUD", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def ZGRID1(self):
@@ -626,7 +626,7 @@ class Parameters_abb(object):
 
     @ZGRID1.setter
     def ZGRID1(self,value):
-        Parameter("ZGRID1", "abb", self.para_dict_list).set_value(value)
+        Parameter("ZGRID1", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def ZGRID2(self):
@@ -634,7 +634,7 @@ class Parameters_abb(object):
 
     @ZGRID2.setter
     def ZGRID2(self,value):
-        Parameter("ZGRID2", "abb", self.para_dict_list).set_value(value)
+        Parameter("ZGRID2", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def ZOUT(self):
@@ -642,7 +642,7 @@ class Parameters_abb(object):
 
     @ZOUT.setter
     def ZOUT(self,value):
-        Parameter("ZOUT", "abb", self.para_dict_list).set_value(value)
+        Parameter("ZOUT", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def ZPRES(self):
@@ -650,7 +650,7 @@ class Parameters_abb(object):
 
     @ZPRES.setter
     def ZPRES(self,value):
-        Parameter("ZPRES", "abb", self.para_dict_list).set_value(value)
+        Parameter("ZPRES", "abb", self.para_dict_list)._set_value(value)
 
     @property
     def ZTRP(self):
@@ -658,5 +658,5 @@ class Parameters_abb(object):
 
     @ZTRP.setter
     def ZTRP(self,value):
-        Parameter("ZTRP", "abb", self.para_dict_list).set_value(value)
+        Parameter("ZTRP", "abb", self.para_dict_list)._set_value(value)
 
